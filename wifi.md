@@ -16,7 +16,7 @@
 
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 
-update_config=1
+update_config=1  #如果默认是0，就改为1
 
 country=CN  #地区和国家
 
