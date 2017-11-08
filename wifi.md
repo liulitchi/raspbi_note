@@ -7,7 +7,7 @@
 
 3，ubuntu系统下，以管理员身份用nano打开 
 
-/etc/wap_supplicant/wpa_supplicant.conf
+/etc/wpa_supplicant/wpa_supplicant.conf
 
 （文件不存在就新建一个）
 
