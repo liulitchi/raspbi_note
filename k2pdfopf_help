@@ -64,5 +64,21 @@ Enter option above (h=help, q=quit):
  mo.模式（ -mode）
  X.完成后退出（-x）
  
- 一个可选的命令项: k2pdfopt myfile.pdf -ui- -j 0 -w 480 -h 800 -bpc 2
- 具体解释：          软件   文件名   命令行输出   宽度480像素 高度800像素 
+ X.设置TESSERACT_PREFIX环境变量：
+  cat .pam_environment
+  TESSDATA_PREFIX=/usr/share/tesseract-ocr/
+  回车，键入 Ctrl-D 确认。注销电脑以使设置生效。
+  
+  注：如果未设置环境变量，将会使用 GOCR 作 OCR，显示可能如下：
+  Initializing OCR for 2 threads xx
+  Could not find Tesseract data (env var TESSDATA_PREFIX = (not assigned)).
+  Using GOCR v0.50.
+ 
+ XI.TESSERACT 与 GOCR 的区别:
+ OCR默认情况下未打开，可使用 -ocr命令启动。
+ 有两种不同的OCR引擎来转换为文本。默认是Google的开源 Tesseract（需要另安装），支持中文等多种语言。
+ 另一个是 GOCR ， GOCR不需要额外的文件，比 Tesseract 快十倍以上，不过仅支持 ACSII。
+ 
+
+ 
+ 
