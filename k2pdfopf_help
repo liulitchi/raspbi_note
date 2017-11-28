@@ -63,3 +63,6 @@ Enter option above (h=help, q=quit):
  W.包装文本/重排文本（-wrap，-ws）
  mo.模式（ -mode）
  X.完成后退出（-x）
+ 
+ 一个可选的命令项: k2pdfopt myfile.pdf -ui- -j 0 -w 480 -h 800 -bpc 2
+ 具体解释：          软件   文件名   命令行输出   宽度480像素 高度800像素 
