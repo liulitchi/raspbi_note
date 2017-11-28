@@ -65,7 +65,7 @@ Enter option above (h=help, q=quit):
  X.完成后退出（-x）
  
  
- VI.ubuntu 下安装 tesseract-ocr:
+ IX.ubuntu 下安装 tesseract-ocr:
    更新系统：sudo apt update
    安装软件：sudo apt install tesseract-ocr
    安装简体中文包：sudo apt install tesseract-ocr-chi-sim
@@ -84,6 +84,11 @@ Enter option above (h=help, q=quit):
  OCR默认情况下未打开，可使用 -ocr命令启动。
  有两种不同的OCR引擎来转换为文本。默认是Google的开源项目 Tesseract（需要另安装），支持中文等多种语言。
  另一个是 GOCR ， GOCR不需要额外的文件，比 Tesseract 快十倍以上，不过仅支持 ACSII。
+ 
+ XII.如何图片转文字：
+   可以采用多（如 英文+简体中文）语言输入： k2pdfopt -ocr t -ocrlang eng+chi_sim -col 1 测试文件.pdf -o 测试文本
+   回车后等待（输出文件仍为pdf）
+   
  
 
  
