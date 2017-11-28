@@ -64,8 +64,14 @@ Enter option above (h=help, q=quit):
  mo.模式（ -mode）
  X.完成后退出（-x）
  
+ 
+ VI.ubuntu 下安装 tesseract-ocr:
+   更新系统：sudo apt update
+   安装软件：sudo apt install tesseract-ocr
+   安装简体中文包：sudo apt install tesseract-ocr-chi-sim
+   备注：一个可选的图形客户端：gimagereader
  X.设置TESSERACT_PREFIX环境变量：
-  cat .pam_environment
+  cat >> .pam_environment
   TESSDATA_PREFIX=/usr/share/tesseract-ocr/
   回车，键入 Ctrl-D 确认。注销电脑以使设置生效。
   
@@ -76,7 +82,7 @@ Enter option above (h=help, q=quit):
  
  XI.TESSERACT 与 GOCR 的区别:
  OCR默认情况下未打开，可使用 -ocr命令启动。
- 有两种不同的OCR引擎来转换为文本。默认是Google的开源 Tesseract（需要另安装），支持中文等多种语言。
+ 有两种不同的OCR引擎来转换为文本。默认是Google的开源项目 Tesseract（需要另安装），支持中文等多种语言。
  另一个是 GOCR ， GOCR不需要额外的文件，比 Tesseract 快十倍以上，不过仅支持 ACSII。
  
 
