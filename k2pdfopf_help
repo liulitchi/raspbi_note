@@ -1,0 +1,65 @@
+k2pdfopt 是一个很方便的pdf重排工具，当然，它的功能不止于此，这里，我们简单学习一下它的功能。
+
+终端里输入 k2pdfopt -h ， 我们可以看到类似的文本显示:
+
+=========================================================================
+
+k2pdfopt v2.42 (w/MuPDF,DjVuLibre,OCR) (c) 2017, GPLv3, http://willus.com
+    Compiled May 20 2017 with Gnu C v4.8.5 for Linux on x64.
+
+ a. Autostraighten (-as)                 n. Native PDF output (-n)
+ b. Bitmap type (-jpg,-png,-bpc)         o. Output name (-o)
+bp. Break pages (-bp,-f2p)              oc. OCR (-ocr,-ocrvis,...)
+ c. Color/Negative output (-c, -neg)    om. Output margins (-om)
+co. Column detection (-col,-ch,...)      p. Page range (-p)
+cs. Contrast/Sharpen (-cmax,-g,-s,-wt)  pd. Padding/Marking (-p[lrbt],-mc)
+ d. Device selection (-dev,-h,-w,-dpi)   r. Right-to-left page scans (-r)
+ds. Document scale factor (-ds)         rt. Rotate source page (-sr)
+ f. Fit to single column (-fc)           s. Special (-de,-evl,-gs)
+gt. Gap thresholds (-gt...)             sm. Show marked source (-sm)
+ j. Justification (-j)                   u. Usage (command line opts)
+ l. Landscape mode (-ls)                 v. Vertical spacing (-vb,-vs)
+ m. Margin to ignore (-m)                w. Wrap/Reflow text (-wrap,-ws)
+mo. Mode (-mode)                         x. Exit on completion (-x)
+
+Selected options:  -help
+
+Enter option above (h=help, q=quit):
+
+============================================================================
+
+具体解释一下：
+
+第一行和第二行解释的软件的版本和编译信息等细节，如它也具备OCR功能。
+
+下面具体我们一一解释:
+
+
+ a.自动增强（-as）               
+ n.本地PDF输出（-n）
+ b.bitmap类型（-jpg，-png，-bpc） 
+ O.输出名称（-o）
+ BP.中断页面（-bp，-f2p）
+ OC.OCR（-ocr，-ocrvis，...）
+ C.彩色/负输出（-c，-neg）
+ OM.输出边距（-om）
+ co.列检测（-col，-ch，...）
+ p.页面范围（-p）
+ CS.对比度/锐化（-cmax，-g，-s，-wt）
+ PD.填充/标记（-p [lrbt]， - mc）
+ d.设备选择（-dev，-h，-w，-dpi）
+ r.从右到左扫描页面（-r）
+ DS.文档比例因子（-ds）
+ RT.旋转源页面（-sr）
+ F.适合单列（-fc）
+ s.特殊（-de，-evl，-gs）
+ GT.差距阈值（-gt ...）
+ SM.显示标记的源（-sm）
+ j.理由（-j）
+ u.用法（命令行opts）
+ l.水平模式（-ls）
+ v.垂直间距（-vb，-vs）
+ m.要忽略的余量（-m）
+ W.包装文本/重排文本（-wrap，-ws）
+ mo.模式（ -mode）
+ X.完成后退出（-x）
