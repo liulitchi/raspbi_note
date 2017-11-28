@@ -57,7 +57,7 @@ Enter option above (h=help, q=quit):
  SM.显示标记的源（-sm）
  j.理由（-j）
  u.用法（命令行opts）
- l.水平模式（-ls）
+ l.横向模式（-ls）
  v.垂直间距（-vb，-vs）
  m.要忽略的余量（-m）
  W.包装文本/重排文本（-wrap，-ws）
