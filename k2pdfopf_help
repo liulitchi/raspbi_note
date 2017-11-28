@@ -64,7 +64,8 @@ Enter option above (h=help, q=quit):
  mo.模式（ -mode）
  X.完成后退出（-x）
  
- 
+ VIII.从右到左扫描页面(-r)
+   有些语言，是从右到左写的，比如希伯来文。选择 -r ，让软件右对齐扫描。
  IX.ubuntu 下安装 tesseract-ocr:
    更新系统：sudo apt update
    安装软件：sudo apt install tesseract-ocr
