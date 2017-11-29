@@ -64,14 +64,13 @@ Enter option above (h=help, q=quit):
  mo.模式（ -mode）
  X.完成后退出（-x）
  
- VIII.从右到左扫描页面(-r)
-   有些语言，是从右到左写的，比如希伯来文。选择 -r ，让软件右对齐扫描。
+ VIII.
  IX.ubuntu 下安装 tesseract-ocr:
    更新系统：sudo apt update
    安装软件：sudo apt install tesseract-ocr
    安装简体中文包：sudo apt install tesseract-ocr-chi-sim
    备注：一个可选的图形客户端：gimagereader
- X.设置TESSERACT_PREFIX环境变量：
+ X.linux设置TESSERACT_PREFIX环境变量：
   cat >> .pam_environment
   TESSDATA_PREFIX=/usr/share/tesseract-ocr/
   回车，键入 Ctrl-D 确认。注销电脑以使设置生效。
@@ -88,7 +87,31 @@ Enter option above (h=help, q=quit):
  
  XII.如何图片转文字：
    可以采用多（如 英文+简体中文）语言输入： k2pdfopt -ocr t -ocrlang eng+chi_sim -col 1 测试文件.pdf -o 测试文本
-   回车后等待（输出文件仍为pdf）
+   回车后等待（输出文件仍为pdf）  
+ 调整输出：
+   1.屏幕尺寸：
+     设置阅读器的屏幕尺寸，可选择-w（代表宽度）和-h（代表高度）命令行选项。
+     屏幕尺寸以像素分辨率为单位，kindle基础版分辨率为600*800，建议选择输出560*735;
+     kindle DX 分辨率是 824*120 ，建议设置 -w 784 -h 1135。
+   3.横向模式：
+     命令行里 -ls ，或者菜单设置 (l)。横向显示，显示放大效果。
+   4.输出文件大小：
+     为减小PDF体积，可使用 -bpc  选项改变， 默认值是4 ，
+     设置 -bpc 2 （或 -bpc 1）会使文件体积大约减小一半（或1/4）。
+     也可使用 -jpeg 命令选项降低图片质量。
+     如 -jpeg 50 ，质量值越低，输出文件越小。
+   5.设置边距:
+     
+ 处理选项：
+   1.显示标记：
+   2.增加放大倍率:
+     -idpi和 -odpi设置控制着k2pdfopt输出PDF文件的质量和放大倍数。
+     DPI代表每英寸点数, -idpi表示k2pdfopt每英寸或分辨率用于渲染源（输入）PDF文件的点数，
+     -odpi表示k2pdfopt输出设备（读取器屏幕）的每英寸点数。
+   3.原生PDF输出：
+   4.自动矫正：
+   9.从右到左扫描页面(-r)：
+     有些语言书写方式是从右向左的，比如希伯来文。选择 -r ，让软件从右开始扫描。
    
  
 
