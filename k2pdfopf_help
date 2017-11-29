@@ -86,7 +86,7 @@ Enter option above (h=help, q=quit):
  另一个是 GOCR ， GOCR不需要额外的文件，比 Tesseract 快十倍以上，不过仅支持 ACSII。
  
  XII.如何图片转文字：
-   可以采用多（如 英文+简体中文）语言输入： k2pdfopt -ocr t -ocrlang eng+chi_sim -col 1 测试文件.pdf -o 测试文本
+   可以采用多（如 英文+简体中文）语言输入： k2pdfopt -ocr t -ocrlang eng+chi_sim -col 1 测试文件.pdf
    回车后等待（输出文件仍为pdf）  
  调整输出：
    1.屏幕尺寸：
