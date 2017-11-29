@@ -69,7 +69,7 @@ Enter option above (h=help, q=quit):
    更新系统：sudo apt update
    安装软件：sudo apt install tesseract-ocr
    安装简体中文包：sudo apt install tesseract-ocr-chi-sim
-   备注：一个可选的图形客户端：gimagereader
+   备注：一个可选的图形客户端：ocrfeeder
  X.linux设置TESSERACT_PREFIX环境变量：
   cat >> .pam_environment
   TESSDATA_PREFIX=/usr/share/tesseract-ocr/
