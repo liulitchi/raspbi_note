@@ -1,0 +1,40 @@
+#https://docs.python.org/3.7/library/math.html
+# 9.2. math -- 数学函数
+
+9.2.1.
+math.ceil(x)
+    返回大于或等于 x 的最小整数。
+    如果 x 不是浮点数（float），则传给 x.__ceil__() ，返回整数值。
+    
+math.copysign(x,y)
+
+math.fabs(x)
+    返回 x 的绝对值。
+
+math.factorial(x)
+    返回 x 的阶乘。如果 x 不是整数或为负数，则显示 ValueError 的错误。
+    
+math.floor(x)
+    返回小于或等于 x 的最大整数。
+    
+math.fmod(x,y)
+
+math.frep(x)
+    
+math.fsum(iterable)
+
+math.gcd(a,b)
+    返回整数a和整数b的最大公约数。
+    v3.5新增
+    
+    
+9.2.2. 幂函数和对数函数
+
+math.exp(x)
+    返回 e 的x次方，e = 2.71828...。
+    此函数比 math.e** 或 pow（math.e,x）更为精确。
+    
+math.expm1(x)
+
+math.log(x[, base])
+    
