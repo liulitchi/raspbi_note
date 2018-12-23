@@ -1,6 +1,6 @@
 k2pdfopt 是一个很方便的pdf重排工具，当然，它的功能不止于此，这里，我们简单学习一下它的功能。
 
-终端里输入 k2pdfopt -h ， 我们可以看到类似的文本显示:
+终端里输入 `k2pdfopt -h` ， 我们可以看到类似的文本显示:
 
 ```
 k2pdfopt v2.42 (w/MuPDF,DjVuLibre,OCR) (c) 2017, GPLv3, http://willus.com
@@ -92,7 +92,7 @@ Enter option above (h=help, q=quit):
  另一个是 GOCR ， GOCR不需要额外的文件，比 Tesseract 快十倍以上，不过仅支持 ACSII编码（也就是说，不支持中文）。
  
  ## XII.如何图片转文字：
-   可以采用多（如 英文+简体中文）语言输入： > k2pdfopt -ocr t -ocrlang eng+chi_sim -col 1 测试文件.pdf
+   可以采用多（如 英文+简体中文）语言输入： ` k2pdfopt -ocr t -ocrlang eng+chi_sim -col 1 测试文件.pdf`
    
    回车后等待（输出文件仍为pdf）  
  
