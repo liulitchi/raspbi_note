@@ -2,8 +2,7 @@ k2pdfopt 是一个很方便的pdf重排工具，当然，它的功能不止于�
 
 终端里输入 k2pdfopt -h ， 我们可以看到类似的文本显示:
 
-=========================================================================
-
+```
 k2pdfopt v2.42 (w/MuPDF,DjVuLibre,OCR) (c) 2017, GPLv3, http://willus.com
     Compiled May 20 2017 with Gnu C v4.8.5 for Linux on x64.
 
@@ -25,8 +24,7 @@ mo. Mode (-mode)                         x. Exit on completion (-x)
 Selected options:  -help
 
 Enter option above (h=help, q=quit):
-
-============================================================================
+```
 
 具体解释一下：
 
